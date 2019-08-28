@@ -1,0 +1,18 @@
+Readme
+
+Task1 Java Part:
+Commend line on EC2:
+1)
+/home/ec2-user/hadoop/hadoop-2.7.5/bin/hadoop com.sun.tools.javac.Main Yu_Hou_Average.java
+2)
+jar cf Yu_Hou_avg.jar Yu_Hou_Average*.class
+3)
+/home/ec2-user/hadoop/hadoop-2.7.5/bin/hadoop jar Yu_Hou_avg.jar Yu_Hou_Average menu.csv output-hello
+
+This will create a dictionary “output-hello”. You also could name whatever dictionary name you like. You could find the file “part-r-00000” in this dictionary. “part-r-00000” is the output file you need.
+
+Task2 Python Part (Version: Python 2.7):
+Commend line on EC2:
+/home/ec2-user/spark/spark-2.2.1-bin-hadoop2.7/bin/spark-submit Yu_Hou_Average.py menu.csv out-hello
+
+This will create a dictionary “out-hello”. You also could name whatever dictionary name you like (For example output-dir). You could find the file “Yu_Hou_task2.txt ” in this dictionary. “Yu_Hou_task2.txt” is the output file you need.
